@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import {
-  Accordion, AccordionDetails, AccordionSummary, Box
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Box
 } from '@mui/material'
 import { appRoutes } from 'appRouter/routes'
 import { ICONS } from 'assets/icons'

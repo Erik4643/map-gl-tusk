@@ -1,5 +1,7 @@
-import Map, {
-  GeolocateControl, NavigationControl
+import Map,
+{
+  GeolocateControl,
+  NavigationControl
 } from 'react-map-gl'
 import maplibregl from 'maplibre-gl'
 import { API_KEY, MARKERS } from 'utils/constants'

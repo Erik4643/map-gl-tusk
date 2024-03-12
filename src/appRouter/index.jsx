@@ -9,6 +9,7 @@ import MapRoutes from 'components/mapRoutes'
 import { appRoutes } from './routes'
 
 export const AppRouter = () => {
+  // due to lack of time, I did not have time to connect the "state manger" and implemented the task here
   const [completedArr, setCompletedArr] = useState([])
 
   const appPages = [
