@@ -1,0 +1,154 @@
+{
+  "extends": ["airbnb"],
+  "plugins": ["prettier", "react", "react-hooks", "simple-import-sort"],
+  "rules": {
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "react/no-unstable-nested-components": "off",
+    "guard-for-in": "off",
+    "max-len": "off",
+    "no-plusplus": "off",
+    "prefer-regex-literals": "off",
+    "no-param-reassign": [
+      0,
+      {
+        "props": false
+      }
+    ],
+    "prefer-rest-params": 1,
+    "prefer-template": 0,
+    "react/prefer-stateless-function": 1,
+    "react/jsx-no-bind": [
+      0,
+      {
+        "ignoreRefs": false,
+        "allowArrowFunctions": false,
+        "allowBind": true
+      }
+    ],
+    "no-bitwise": "off",
+    "linebreak-style": 0,
+    "array-callback-return": "error",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "react/button-has-type": "off",
+    "comma-dangle": ["error", "never"],
+    "semi": ["error", "never"],
+    "indent": ["error", 2],
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "react/no-unescaped-entities": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+    "for-direction": "error",
+    "no-compare-neg-zero": "error",
+    "no-cond-assign": "error",
+    "no-const-assign": "error",
+    "prefer-const": "off",
+    "camelcase": "off",
+    "no-constant-condition": "error",
+    "no-debugger": "error",
+    "no-dupe-args": "error",
+    "no-dupe-else-if": "error",
+    "no-dupe-keys": "error",
+    "no-duplicate-case": "error",
+    "no-duplicate-imports": "error",
+    "no-empty-pattern": "error",
+    "no-fallthrough": "error",
+    "no-func-assign": "error",
+    "no-import-assign": "error",
+    "no-inner-declarations": "error",
+    "no-invalid-regexp": "error",
+    "no-irregular-whitespace": "error",
+    "no-loss-of-precision": "error",
+    "no-new-symbol": "error",
+    "no-obj-calls": "error",
+    "no-sparse-arrays": "error",
+    "no-template-curly-in-string": "error",
+    "no-undef": "error",
+    "no-unexpected-multiline": "error",
+    "no-unmodified-loop-condition": "error",
+    "no-unreachable": "error",
+    "no-unreachable-loop": "error",
+    "no-unsafe-finally": "error",
+    "no-unsafe-negation": "error",
+    "no-use-before-define": "error",
+    "use-isnan": "error",
+    "valid-typeof": "error",
+    "accessor-pairs": "error",
+    "arrow-body-style": ["error", "as-needed"],
+    "block-scoped-var": "error",
+    "consistent-return": "error",
+    "consistent-this": ["error", "that"],
+    "curly": "error",
+    "default-case": "error",
+    "default-case-last": "error",
+    "dot-notation": "error",
+    "eqeqeq": "error",
+    "func-name-matching": ["error", "never"],
+    "func-names": ["error", "always"],
+    "no-case-declarations": "error",
+    "no-else-return": "error",
+    "no-empty": "error",
+    "no-empty-function": "error",
+    "no-extra-boolean-cast": "error",
+    "no-global-assign": "error",
+    "no-lonely-if": "error",
+    "switch-colon-spacing": "error",
+    "no-ternary": "off",
+    "import/no-cycle": "off",
+    "no-nested-ternary": "off",
+    "no-prototype-builtins": "off",
+    "no-unsafe-optional-chaining": "off",
+    "no-restricted-syntax": [
+      "error",
+      "FunctionExpression[generator=false]:not(:has(ThisExpression))",
+      "FunctionDeclaration[generator=false]:not(:has(ThisExpression))"
+    ],
+    "import/prefer-default-export": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "simple-import-sort/imports": [
+      "warn",
+      {
+        "groups": [
+          ["^react", "^@?\\w"],
+          ["^(@|components)(/.*|$)"],
+          ["^\\u0000"],
+          ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+          ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+          ["^.+\\.?(css)$"]
+        ]
+      }
+    ],
+    "simple-import-sort/exports": "warn",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error"
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2020
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}
